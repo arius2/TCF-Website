@@ -1,0 +1,128 @@
+#grad{
+    background-image: linear-gradient(to right, #D5D1FF, #B892C6, #3D3973, #0D0936);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.card{
+    display:block !important;
+    padding: 0 5rem;
+    justify-content: space-between;
+    margin:80px;
+    align-content: center;
+    align-items:safe;
+    border-width:300px;
+    height:700px;
+    width: 1200px;
+    border: 3px solid #fff;
+    border-radius: 60px;
+    border-color:#fff;
+    overflow:hidden;
+    box-shadow: 0 0px 800px rgba(0, 0, 0, 0.1);
+}
+
+ body{
+    align-items: center;
+    background-size: cover;
+    background-position:0%;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align:justify;
+    font-size: 62px;
+    margin: 80px;
+    margin-top: 100px;
+    letter-spacing: 10px;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+}
+
+h1 span {
+    margin: auto;
+    font-family: "Space Mono";
+    color: #65609F;
+    font-weight: 500;
+}
+
+p{
+    margin: auto;
+    margin-top: -100px;
+    font-family: "Quicksand";
+    line-height: 40px;
+    font-weight:600;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+
+.btn{
+    font-family: "Montserrat", sans-serif;
+    margin-block: 800px;
+    margin-left: -3px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display:-moz-popup;
+    /* font-weight: bold; */
+    font-size: 1.125rem;
+    border-image: linear-gradient(to right, #D5D1FF, #B892C6, #3D3973, #0D0936);
+}
+
+.btn.Purple{
+    
+    color: #d8fffd;
+    background-color: #6E65CB;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border:2px solid #0D0936;
+}
+
+.btn.light{
+    color: #6E65CB;
+    background-color: #d8fffd;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border:2px solid#0D0936;
+
+   
+}
+.btn.Purple:hover{
+   
+    background-color: #d8fffd;
+    color: #6E65CB;
+}
+
+.btn.light:hover{
+    background-color: #6e65cb;
+    color: #d8fffd;
+   text-underline-offset:inherit;
+}
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -180px;
+}
+
+.hero-section .left{
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 200%;
+    text-align:justify;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.hero-section .right {
+    margin-right: 40px;
+    margin-top: 80px;
+}
+
