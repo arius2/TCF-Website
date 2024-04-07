@@ -1,0 +1,69 @@
+{
+    "0": {
+      "name": "Doodle",
+      "points": 700,
+      "sem": "2nd",
+      "language": "Python"
+    },
+    "1": {
+      "name": "Jane",
+      "points": 900,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "2": {
+      "name": "John",
+      "points": 850,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "3": {
+      "name": "Alice",
+      "points": 920,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "4": {
+      "name": "Bob",
+      "points": 880,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "5": {
+      "name": "Emily",
+      "points": 910,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "6": {
+      "name": "Mike",
+      "points": 890,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "7": {
+      "name": "Sara",
+      "points": 940,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "8": {
+      "name": "David",
+      "points": 870,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "9": {
+      "name": "Lily",
+      "points": 930,
+      "sem": "1st",
+      "language": "Python"
+    },
+    "10": {
+      "name": "Alex",
+      "points": 860,
+      "sem": "1st",
+      "language": "Python"
+    }
+  }
+  
