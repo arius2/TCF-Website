@@ -1,69 +1,68 @@
 {
     "0": {
-      "name": "Doodle",
-      "points": 700,
-      "sem": "2nd",
-      "language": "Python"
+        "name": "Doodle",
+        "score": 700,
+        "sem": "2",
+        "language": "Python"
     },
     "1": {
-      "name": "Jane",
-      "points": 900,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Jane",
+        "score": 900,
+        "sem": "1",
+        "language": "Python"
     },
     "2": {
-      "name": "John",
-      "points": 850,
-      "sem": "1st",
-      "language": "Python"
+        "name": "John",
+        "score": 850,
+        "sem": "1",
+        "language": "Python"
     },
     "3": {
-      "name": "Alice",
-      "points": 920,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Alice",
+        "score": 920,
+        "sem": "2",
+        "language": "Python"
     },
     "4": {
-      "name": "Bob",
-      "points": 880,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Bob",
+        "score": 880,
+        "sem": "2",
+        "language": "Python"
     },
     "5": {
-      "name": "Emily",
-      "points": 910,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Emily",
+        "score": 910,
+        "sem": "1",
+        "language": "Python"
     },
     "6": {
-      "name": "Mike",
-      "points": 890,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Mike",
+        "score": 890,
+        "sem": "1",
+        "language": "Python"
     },
     "7": {
-      "name": "Sara",
-      "points": 940,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Sara",
+        "score": 940,
+        "sem": "1",
+        "language": "Python"
     },
     "8": {
-      "name": "David",
-      "points": 870,
-      "sem": "1st",
-      "language": "Python"
+        "name": "David",
+        "score": 870,
+        "sem": "1",
+        "language": "Python"
     },
     "9": {
-      "name": "Lily",
-      "points": 930,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Lily",
+        "score": 930,
+        "sem": "1",
+        "language": "Python"
     },
     "10": {
-      "name": "Alex",
-      "points": 860,
-      "sem": "1st",
-      "language": "Python"
+        "name": "Alex",
+        "score": 860,
+        "sem": "1",
+        "language": "Python"
     }
-  }
-  
+}

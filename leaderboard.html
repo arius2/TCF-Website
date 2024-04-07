@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-    <div class="navbar">
-        <ul class="ul">
-            <li class="li1">Logo</li>
-            <li class="li1">Home</li>
-            <li class="li1">Contact-Us</li>
-            <li class="li1">About Us</li>
-        </ul>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Leaderboard - The Coding Fortnight</title>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="header">
-            Leader Board
-        </div>
-        <div class="main">
-            <table class="table">
-                <tr class="heads">
-                    <td>Rank</td>
-                    <td>Name</td>
-                    <td>Sem</td>
-                    <td>Language</td>
-                    <td>Score</td>
-                </tr>
-            </table>
-        </div>
+      <!-- Header Section -->
+      <header>
+        <nav>
+          <div class="logo"></div>
+          <div class="main-nav-list">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#">Leaderboards</a></li>
+              <li><a class="main-nav-link" href="#">About Us</a></li>
+              <li><a class="main-nav-link" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </div>
-    <script src="Script.js"></script>
-</body>
+    <main>
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Sem</th>
+            <th>Language</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+  </body>
+  <script src="script/leaderboard.js"></script>
 </html>
