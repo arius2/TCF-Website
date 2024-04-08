@@ -2,9 +2,11 @@
 
 
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 
 html {
     font-size: 62.5%;
@@ -15,8 +17,6 @@ html {
     background: #EEF6F3;
     width: 100%;
     display: flex;
-    flex-direction: stretch;
-    align-items: stretch;
     position: relative;
 }
 .headphones{
@@ -24,16 +24,15 @@ html {
     right: 0;
     bottom: 0;
 }
-.container {
+.tcontainer {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(0.9rem);
-    flex-grow: 1;
     border: solid white 3px;
     border-radius: 2rem;
     display: flex;
     margin: 10rem;
     margin-top: 0;
-
+    max-width: 100% !important;
 }
 
 .subcontainer {
@@ -41,6 +40,7 @@ html {
     flex-grow: 1;
     margin: 7.5rem;
     grid-template-rows: 30% 70%;
+    max-width: 100%;
 }
 
 .top-coders-head {
@@ -61,6 +61,7 @@ html {
     display: flex;
     max-height: 85%;
     max-width: 80rem;
+    
 
 }
 
@@ -89,7 +90,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     aspect-ratio: 1;
-    z-index: 90000000;
+    z-index: 90;
 
 }
 .prev-icon img, .next-icon img{
