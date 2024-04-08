@@ -172,6 +172,8 @@ header h1{
     border-radius:2em;
     border:2px solid #0D0936;
     background-image: linear-gradient(to right, rgb(211, 206, 206) , rgb(157, 156, 156));
-    padding:8px;
+    padding:18px 8px;
     margin-bottom:9px;
+    color:white;
 }
+
