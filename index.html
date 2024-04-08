@@ -3,39 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/carousel.css">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,YOPQ@8..144,100..1000,109,116&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,YOPQ@8..144,100..1000,109,116&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Flex:opsz,wght,XOPQ,YOPQ@8..144,100..1000,109,116&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Quicksand:wght@500&family=Roboto+Flex:opsz,wght,XOPQ,YOPQ@8..144,100..1000,109,116&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/styles.css">
 </head>
-<body style="background-image: url('images/Gradient.png');">
-  <header class="card">
-  <h1>THE <span>CODING</span> FORTNIGHT</h1>
-  <div class="hero-section">
-    <div class="left">
-      
-      <p>Where Coding <br> Dreams Come to <br> Life, Every Fortnight!</p>
-
-
-      <a href="#" class = "btn Purple">Register Now!</a>
-      <a href="#" class = "btn light">Learn More</a>
-
+<body>
+  <div class="background">
+    <div class="headphones">
+      <img src="images\headphones.svg" alt="hp">
     </div>
-    <div class="right">
-      <img src="images/developer_male 1.png" alt="" height="300" width="400">
+    <div class="container">
+      <div class="subcontainer">
+        <div class="top-coders-head">
+          Top Coders
+        </div>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="sub-container-carousel">
+                <div class="prev-icon">
+                  <img src="./images/navbefore.svg" alt="prev">
+                </div>
+                <div class="next-icon">
+                  <img src="./images/navnext.svg" alt="next">
+                </div>
+                <div class="carousel-nav">
+                 <div class="bar">
+                  <div class="button">.</div>
+                  <div class="button">.</div>
+                  <div class="button">.</div>
+                  <div class="button">.</div>
+                  <div class="button">.</div>
+                 </div>
+                </div>
+              
+            </div>
+          </div>
+          <div class="illustration-carousel">
+            <img src="./images/illustration-carousel.svg" alt="">
+          </div>
+      </div>
     </div>
   </div>
-  <script src="script/index.js"></script>
+  <script src="./script/carousel.js"></script>
 </body>
-</header>
 </html>
