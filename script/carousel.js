@@ -91,27 +91,24 @@ renderItems()
     };
 
     startScrolling();
-
     const handleNext = () => {
       container.scrollLeft += container.offsetWidth;
       scrolled += container.offsetWidth;
-      id = (id + 1) % 5;
-      id = Math.min(id, 4); // Ensure id remains within 0 and 4
+      id = (id + 1) % 5;  
       applyStyleToNthChild(id);
       clearInterval(scrollingFunction);
       startScrolling();
     };
-
+    
     const handlePrev = () => {
       container.scrollLeft -= container.offsetWidth;
       scrolled -= container.offsetWidth;
       id = (id - 1 + 5) % 5;
-      id = Math.max(id, 0); // Ensure id remains within 0 and 4
       applyStyleToNthChild(id);
       clearInterval(scrollingFunction);
       startScrolling();
     };
-
+    
     previous.addEventListener("click", handlePrev);
     next.addEventListener("click", handleNext);
 
@@ -125,6 +122,7 @@ renderItems()
         container.scrollLeft = i * container.offsetWidth;
         scrolled = i * container.offsetWidth;
         id = i;
+        console.log(id)
         applyStyleToNthChild(id);
         clearInterval(scrollingFunction);
         startScrolling();

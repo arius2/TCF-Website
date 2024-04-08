@@ -19,6 +19,7 @@ html {
     display: flex;
     position: relative;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .headphones {
@@ -233,4 +234,38 @@ html {
 
 .sub-container-carousel {
     scroll-behavior: smooth;
+}
+@media screen and (max-width:700px) {
+    .carousel-container{
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel, .pseudo{
+        max-width: 90vw;
+    }
+    .carousel-nav{
+        bottom: 0px;
+    }
+    .illustration-carousel img{
+        width: 90vw;
+    }
+    html{
+        font-size: 30%;
+    }
+    .badge img{
+        max-width: 50%;
+    }
+    .headphones{
+        scale: 0.5;
+        bottom: -30rem;
+        transform: translateX(50%) !important;
+        transform: translateY(50%);
+    }
+    .button{
+        font-size: 30rem !important;
+    }
+    .container{
+        height: auto;
+    }
 }
