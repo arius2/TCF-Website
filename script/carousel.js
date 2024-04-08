@@ -1,12 +1,12 @@
 const container = document.getElementsByClassName("sub-container-carousel")[0];
 let currentIndex = 0;
-let leaderboard; // Define leaderboard variable
+let leaderboard; 
 
 fetch("data/leaderboard.json")
   .then((response) => response.json())
   .then((data) => {
     leaderboard = Object.values(data).sort((a, b) => b.score - a.score);
-    updateHTML(); // Update the HTML immediately after fetching data
+    updateHTML(); 
     setInterval(() => {
       updateStudentsPosition();
       updateHTML();
@@ -15,14 +15,14 @@ fetch("data/leaderboard.json")
   .catch((error) => console.error("Error fetching data:", error));
 
 const updateStudentsPosition = () => {
-  currentIndex = (currentIndex + 1) % leaderboard.length; // Rotate to the next position
+  currentIndex = (currentIndex + 1) % leaderboard.length; 
 };
 
 const updateHTML = () => {
-  container.innerHTML = ""; // Clear existing content
+  container.innerHTML = ""; 
   const topFive = leaderboard
     .slice(currentIndex)
-    .concat(leaderboard.slice(0, currentIndex)); // Rotate the top five students array
+    .concat(leaderboard.slice(0, currentIndex)); 
   topFive.forEach((student, index) => {
     student.rank = index + 1;
     setvalues(student, index);
