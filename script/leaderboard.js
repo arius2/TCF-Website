@@ -1,6 +1,7 @@
 const leaderboardTable = document.getElementById("leaderboard");
 const leaderboardBody = leaderboardTable.getElementsByTagName("tbody")[0];
 const leaderboardHead = leaderboardTable.getElementsByTagName("thead")[0];
+const topLeaderboard = document.getElementById("top-leaderboard");
 var leaderboard = null;
 
 function displayLeaderboard() {
@@ -17,6 +18,39 @@ function displayLeaderboard() {
       <td>${student.language}</td>
       <td>${student.score}</td>`;
     leaderboardBody.append(tableRow);
+  });
+
+  const leaderboardBars = topLeaderboard.querySelectorAll(".leaderboard-bar");
+  const topScore = leaderboard[0].score;
+  const topMinScore = (
+    leaderboard[leaderboardBars.length - 1] || leaderboard[leaderboard.length - 1]
+  ).score;
+
+  topLeaderboard.style.setProperty("--top-score", topScore);
+
+  // (topMinScore - base-score) / (topScore - base-score) = height, height >= 0.25
+  // (topMinScore - base-score) / (topScore - base-score) >= 0.25
+  // base-score >= (topMinScore - 0.25 * topScore) / 0.75
+  topLeaderboard.style.setProperty(
+    "--base-score",
+    (topMinScore - 0.25 * topScore) / 0.75
+  );
+  leaderboardBars.forEach((bar) => {
+    const idx = bar.getAttribute("data-idx");
+    bar.style.setProperty("--score", leaderboard[idx].score);
+    bar.style.setProperty("--language", leaderboard[idx].language);
+    bar.setAttribute("data-name", leaderboard[idx].name);
+    bar.setAttribute("data-rank", leaderboard[idx].rank);
+    bar.querySelector(".bar-score").textContent = leaderboard[idx].score;
+    const rank =
+      leaderboard[idx].rank == 1
+        ? "1st"
+        : leaderboard[idx].rank == 2
+        ? "2nd"
+        : leaderboard[idx].rank == 3
+        ? "3rd"
+        : leaderboard[idx].rank + "th";
+    bar.querySelector(".bar-rank").textContent = rank;
   });
 }
 

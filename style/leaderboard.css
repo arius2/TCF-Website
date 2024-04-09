@@ -134,3 +134,69 @@ tbody td:last-child {
   border-bottom-right-radius: 1rem;
 }
 
+/* Top Leaderboard */
+#top-leaderboard {
+  --max-height: 20rem;
+  width: 100%;
+  height: calc(var(--max-height) + 6rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.leaderboard-bar {
+  background-color: #b465e2;
+  width: 10rem;
+  height: calc(
+    (var(--score) - var(--base-score)) / (var(--top-score) - var(--base-score)) *
+      var(--max-height)
+  );
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border: 2px solid white;
+  border-bottom: 0;
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboard-bar::after {
+  content: attr(data-name);
+  top: 0;
+  position: absolute;
+  transform: translate(0, -100%);
+  font-size: 1.2rem;
+}
+.leaderboard-bar[data-rank="1"] {
+  background: linear-gradient(to bottom right, #e4a92a, #f1c80b);
+}
+.leaderboard-bar[data-rank="2"] {
+  background: linear-gradient(to bottom right, #a3a098, #ccc9c1);
+}
+.leaderboard-bar[data-rank="3"] {
+  background: linear-gradient(to bottom right, #96742b, #d4a132);
+}
+.leaderboard-bar[data-rank="1"]::before {
+  content: "";
+  background-image: url("../images/crown.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  transform: translate(0, -6rem);
+  font-size: 1rem;
+}
+
+.bar-rank {
+  font-size: 1.5rem;
+}
+.bar-score {
+  font-size: 1rem;
+}
+
