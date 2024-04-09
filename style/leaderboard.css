@@ -47,3 +47,90 @@ nav {
   text-decoration: underline;
 }
 
+/* Main Section */
+
+.container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  margin-inline: 7.5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2.5rem;
+  padding-block: 3rem;
+  padding-inline: 6rem;
+
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.35) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+h1 {
+  color: rgb(179, 145, 191);
+  /* color: #3b3b53; */
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 3rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Table Section */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0;
+  border-radius: 1rem;
+  background-color: rgba(77, 62, 123, 0.25);
+
+  /* text */
+  color: white;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 1.75;
+}
+
+thead tr:last-child {
+  box-shadow: 0 -2px 0 rgba(255, 255, 255, 0.25);
+  text-decoration: underline;
+  border-radius: 1rem;
+}
+
+th,
+tbody td {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out, border-radius 0.1s 0.1s ease-in-out;
+}
+tbody td {
+  border-top: 2px solid rgba(255, 255, 255, 0.25);
+}
+th {
+  user-select: none;
+}
+
+tbody tr:has(td:first-child:hover) td {
+  background-color: rgba(77, 62, 123, 0.1);
+}
+th:hover {
+  background-color: rgba(77, 62, 123, 0.25);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border-radius 0s 0s ease-in-out;
+}
+
+th:first-child,
+tbody td:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+th:last-child,
+tbody td:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
