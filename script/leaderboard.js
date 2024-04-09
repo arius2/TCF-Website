@@ -19,7 +19,10 @@ function displayLeaderboard() {
       <td>${student.score}</td>`;
     leaderboardBody.append(tableRow);
   });
+}
 
+function displayTopLeaderboard() {
+  sortLeaderboard("rank", true);
   const leaderboardBars = topLeaderboard.querySelectorAll(".leaderboard-bar");
   const topScore = leaderboard[0].score;
   const topMinScore = (
@@ -97,6 +100,7 @@ fetch("data/leaderboard.json")
     }
 
     displayLeaderboard();
+    displayTopLeaderboard();
   })
   .catch((error) => console.error("Error fetching data:", error));
 
