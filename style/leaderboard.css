@@ -200,3 +200,70 @@ tbody td:last-child {
   font-size: 1rem;
 }
 
+/* Background Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: hover 10s ease-in-out infinite alternate;
+}
+
+.circle.small {
+  width: 50px;
+  height: 50px;
+}
+.circle.medium {
+  width: 100px;
+  height: 100px;
+}
+.circle.large {
+  width: 200px;
+  height: 200px;
+}
+.circle.pink {
+  background-color: #df88da;
+}
+.circle.blue {
+  background-color: #6f65e2;
+}
+.circle.purple {
+  background-color: #a0a0ff;
+}
+.circle.c1 {
+  --hover-offset: -5rem;
+  top: calc(100% - 7rem);
+  left: 13rem;
+  animation-delay: 1s;
+}
+.circle.c2 {
+  --hover-offset: 2rem;
+  top: calc(100% - 15rem);
+  left: 5.5rem;
+  animation-delay: 0.3s;
+}
+.circle.c3 {
+  --hover-offset: 3rem;
+  top: calc(100% - 15rem);
+  left: 15rem;
+  animation-delay: 2s;
+}
+.circle.c4 {
+  --hover-offset: -2.5rem;
+  top: calc(100% - 9rem);
+  left: calc(100% - 13rem);
+  animation-delay: 1.4s;
+}
+.circle.c5 {
+  --hover-offset: 2.5rem;
+  top: 6rem;
+  left: 5rem;
+  animation-delay: 1s;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(var(--hover-offset));
+  }
+}
