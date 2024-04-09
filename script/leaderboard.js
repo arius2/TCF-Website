@@ -50,7 +50,17 @@ fetch("data/leaderboard.json")
   .then((response) => response.json())
   .then((data) => {
     leaderboard = Object.values(data).sort((a, b) => b.score - a.score);
-    leaderboard.forEach((student, index) => (student.rank = index + 1));
+
+    var curRank = 1;
+    for (let i = 0; i < leaderboard.length; i++) {
+      leaderboard[i].rank = curRank;
+      if (
+        i !== leaderboard.length - 1 &&
+        leaderboard[i].score !== leaderboard[i + 1].score
+      ) {
+        curRank++;
+      }
+    }
 
     displayLeaderboard();
   })
@@ -59,6 +69,7 @@ fetch("data/leaderboard.json")
 leaderboardHead.addEventListener("click", (event) => {
   const head = event.target;
   const sortBy = head.getAttribute("data-name");
+  if (!sortBy) return;
 
   leaderboardHead.querySelectorAll("th").forEach((cell) => {
     if (cell === head) return;
