@@ -6,14 +6,19 @@
       hsla(167, 100%, 79%, 1) 0px,
       transparent 50%
     ),
-    radial-gradient(at 92% 10%, hsla(189, 100%, 84%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 48%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 10%, hsla(189, 100%, 84%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 48%, hsla(355, 100%, 93%, 0.6) 0px, transparent 50%),
     radial-gradient(at 73% 38%, hsla(283, 96%, 83%, 0.6) 0px, transparent 50%),
-    radial-gradient(at 77% 90%, hsla(206, 44%, 68%, 1) 0px, transparent 50%),
+    radial-gradient(at 77% 90%, hsla(206, 44%, 68%, 0.5) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.36) 0px, transparent 50%);
   animation: gradient 13s ease infinite;
   background-size: 200% 200%;
 }
+
+/* .noise {
+  background: url(http://api.thumbr.it/whitenoise-361x370.png);
+  height: 100%;
+} */
 
 @keyframes gradient {
   0% {

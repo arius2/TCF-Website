@@ -23,18 +23,19 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: 
+- Primary:
+#1FA1FF
 #EEF6F3
 #65609F
 #3B3B53
+
 - Tints:
-#fffcfa
-#fbe7d9
-#fff3ec
+#8fd0ff
+#bce3ff
 
 - Shades: 
-#cf711f
-#45260a
+#1981cc
+#105180
 
 - Accents:
 - Greys
@@ -62,6 +63,8 @@ Medium: 11px
 
 /* General Styles */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -71,10 +74,13 @@ Medium: 11px
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  font-family: "Marcellus SC", serif;
+  font-weight: 400;
 }
 
 body {
   background-color: #eef6f3;
+  background-image: url(http://www.transparenttextures.com/patterns/noisy.png);
 }
 
 .container {
@@ -84,15 +90,53 @@ body {
   height: 100vh;
 }
 
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
 /* Header Section */
 
 nav {
   display: flex;
-  justify-content: space-around;
+  height: 10rem;
+  justify-content: space-between;
 }
 
 .main-nav-list {
-  display: flexbox;
-  justify-self: flex-end;
+  display: flex;
+  justify-self: end;
   justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #65609f;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-link:hover {
+  color: #fefeff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #dceeff, 0 0 10px #dceeff, 0 0 15px rgb(228, 250, 255),
+      0 0 20px rgb(157, 235, 255), 0 0 25px rgb(157, 235, 255),
+      0 0 30px rgb(157, 235, 255), 0 0 35px rgb(157, 235, 255);
+  }
+
+  to {
+    text-shadow: 0 0 10px #dceeff, 0 0 15px #dceeff, 0 0 20px rgb(255, 169, 233),
+      0 0 25px rgb(255, 169, 233), 0 0 30px rgb(255, 169, 233),
+      0 0 35px rgb(255, 169, 233), 0 0 40px rgb(255, 169, 233);
+  }
 }
