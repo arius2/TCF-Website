@@ -1,0 +1,68 @@
+{
+    "0": {
+        "name": "Doodle",
+        "score": 700,
+        "sem": "2",
+        "language": "Python"
+    },
+    "1": {
+        "name": "Jane",
+        "score": 900,
+        "sem": "1",
+        "language": "Python"
+    },
+    "2": {
+        "name": "John",
+        "score": 850,
+        "sem": "1",
+        "language": "Python"
+    },
+    "3": {
+        "name": "Alice",
+        "score": 920,
+        "sem": "2",
+        "language": "Python"
+    },
+    "4": {
+        "name": "Bob",
+        "score": 880,
+        "sem": "2",
+        "language": "Python"
+    },
+    "5": {
+        "name": "Emily",
+        "score": 910,
+        "sem": "1",
+        "language": "Python"
+    },
+    "6": {
+        "name": "Mike",
+        "score": 890,
+        "sem": "1",
+        "language": "Python"
+    },
+    "7": {
+        "name": "Sara",
+        "score": 940,
+        "sem": "1",
+        "language": "Python"
+    },
+    "8": {
+        "name": "David",
+        "score": 870,
+        "sem": "1",
+        "language": "Python"
+    },
+    "9": {
+        "name": "Lily",
+        "score": 930,
+        "sem": "1",
+        "language": "Python"
+    },
+    "10": {
+        "name": "Alex",
+        "score": 860,
+        "sem": "1",
+        "language": "Python"
+    }
+}

@@ -5,7 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/styles.css" />
     <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/carousel.css" />
+    <!-- timer -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>The Coding Fortnight</title>
+    <style>
+      .register-btn:hover {
+        background-image: radial-gradient(
+            at 66% 74%,
+            hsla(289, 60%, 53%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 73% 23%,
+            hsla(328, 100%, 71%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 24% 65%,
+            hsla(227, 49%, 54%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 14% 32%,
+            hsla(328, 78%, 53%, 1) 0px,
+            transparent 50%
+          );
+        animation: gradient 10s ease infinite;
+        background-size: 200% 200%;
+        box-shadow: none;
+      }
+    </style>
   </head>
   <body>
     <div class="gradient-bg1">
@@ -32,11 +65,13 @@
             <div class="hero-content">
               <p>Where Coding Dreams Come to Life, Every Fortnight!</p>
               <div class="hero-btns">
-                <button class="register-btn">Register Now!</button>
+                <button class="register-btn">
+                  <a href="#" id="registration-button">Register Now!</a>
+                </button>
                 <button class="learn-more-btn">Learn More↓</button>
               </div>
-              <div class="hero-reg">
-                <svg
+              <div class="hero-reg dark-gradient-bg" id="countdown">
+                <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -50,7 +85,11 @@
                     d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                   />
                 </svg>
-                <h1>24 : 30 : 29</h1>
+                <h1>24 : 30 : 29</h1> -->
+                <span class="material-symbols-outlined" style="font-size: 4rem">
+                  timer
+                </span>
+                <span id="countdown-display"></span>
               </div>
             </div>
             <img
@@ -60,7 +99,73 @@
             />
           </div>
         </div>
+
+        <!-- Top Coders Section -->
+        <div class="box-bg" style="margin-top: 5rem">
+          <div class="top-coders white-stroke">
+            <div class="top-coders-head">Top Coders</div>
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="pseudo">
+                  <div class="sub-container-carousel"></div>
+                  <div class="prev-icon">
+                    <img src="images/navbefore.svg" alt="prev" />
+                  </div>
+                  <div class="next-icon">
+                    <img src="images/navnext.svg" alt="next" />
+                  </div>
+                  <div class="carousel-nav">
+                    <div class="bar">
+                      <div class="button">.</div>
+                      <div class="button">.</div>
+                      <div class="button">.</div>
+                      <div class="button">.</div>
+                      <div class="button">.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="illustration-carousel">
+              <img src="./images/illustration-carousel.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Script -->
+    <script src="script/carousel.js"></script>
+    <script>
+      // Set the registration deadline (YYYY-MM-DDTHH:MM:SS format)
+      const deadline = new Date("April 20, 2024 09:43:00").getTime();
+
+      // Update the countdown every second
+      const timerInterval = setInterval(updateCountdown, 1000);
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = deadline - now;
+
+        if (diff <= 0) {
+          clearInterval(timerInterval);
+          document.getElementById("registration-button").innerHTML =
+            "Registration has closed.";
+        } else {
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          // Format the countdown display
+          document.getElementById(
+            "countdown-display"
+          ).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+          console.log(days, hours, minutes);
+        }
+      }
+    </script>
   </body>
 </html>

@@ -204,25 +204,19 @@ nav {
   border-radius: 2rem;
   /* background-color: transparent; */
   border: none;
+  cursor: pointer;
 }
 
 .register-btn {
   color: #fcfcfc !important;
-  box-shadow: inset 0 0 0 2px #65609f;
+  box-shadow: inset 0 0 0 10rem #65609f;
   background-color: #65609f;
-  transition: all 0.3s ease-in;
+  transition: all 0.4s ease-in-out;
 }
 
-.register-btn:hover {
-  background-image: radial-gradient(
-      at 66% 74%,
-      hsla(289, 60%, 53%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 73% 23%, hsla(328, 100%, 71%, 1) 0px, transparent 50%),
-    radial-gradient(at 24% 65%, hsla(227, 49%, 54%, 1) 0px, transparent 50%),
-    radial-gradient(at 14% 32%, hsla(328, 78%, 53%, 1) 0px, transparent 50%);
-  /* box-shadow: inset 0 0 0 2px white; */
+#registration-button {
+  text-decoration: none;
+  color: inherit;
 }
 
 .learn-more-btn {
@@ -234,13 +228,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   height: 10rem;
   background-color: #65609f;
   border-radius: 3rem;
   color: #fcfcfc;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .hero-reg svg {
@@ -249,4 +243,25 @@ nav {
 
 .hero-img {
   height: 45rem;
+}
+
+/* top coders section */
+.top-coders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+  column-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-coders-head {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #3b3b53;
+  grid-column: 1/3;
 }
