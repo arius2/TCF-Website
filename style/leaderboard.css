@@ -235,16 +235,17 @@ tbody td:last-child {
 }
 .leaderboard-bar[data-rank="1"]::before {
   content: "";
-  background-image: url("../images/crown.png");
+  background-image: url("../images/crown2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 5rem;
   height: 5rem;
   position: absolute;
   top: -9rem;
+  right: 6rem;
   font-size: 1rem;
   animation: hover-static 5s ease-in-out infinite;
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  /* box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25); */
 }
 
 .bar-rank {
