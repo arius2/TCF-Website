@@ -253,7 +253,7 @@ nav {
   justify-content: center;
   align-items: center;
   row-gap: 5rem;
-  column-gap: 5rem;
+  /* column-gap: 5rem; */
   justify-content: center;
   align-items: center;
 }
@@ -264,4 +264,103 @@ nav {
   font-family: "Montserrat", sans-serif;
   color: #3b3b53;
   grid-column: 1/3;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 10rem;
+  border-radius: 1rem 1rem 0 0;
+  padding: 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #65609f;
+  color: #fcfcfc;
+  font-family: "Montserrat", serif;
+}
+
+iframe {
+  width: 100%;
+  height: 50rem;
+  /* margin: 0 2rem 2rem 0; */
+}
+
+.contact-info,
+.social-media,
+.opening-hours,
+.navigation,
+.newsletter {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.contact-info h3,
+.social-media h3,
+.opening-hours h3,
+.navigation h3,
+.newsletter h3 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+.contact-info p,
+.social-media p,
+.opening-hours p,
+.navigation p,
+.newsletter p {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+  margin-right: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.navigation ul li:last-child {
+  margin-right: 0;
+}
+
+.newsletter form {
+  margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+  width: 200px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 1rem 1.8rem;
+  background-color: #ed9255;
+  color: #fffcfa;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.newsletter button:hover {
+  background-color: #b15e26;
 }

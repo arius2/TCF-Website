@@ -55,6 +55,10 @@
   border-radius: 50px;
 }
 
+.transparent {
+  opacity: 50%;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 20%;

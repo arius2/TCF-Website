@@ -43,7 +43,8 @@ const renderItems = () => {
 
     const generateContent = (student, index) => {
       const badgeName = ["gold", "silver", "bronze", "4", "5"];
-      const badgeIndex = index < badgeName.length ? index : badgeName.length - 1;
+      const badgeIndex =
+        index < badgeName.length ? index : badgeName.length - 1;
       const currentBadge = badgeName[badgeIndex];
 
       return `
@@ -58,7 +59,7 @@ const renderItems = () => {
         </div>
         <div class="bottom-main">
           <div class="name">${student.name}</div>
-          <div class="class">${student.sem}st sem</div>
+          <div class="class">sem ${student.sem}</div>
         </div>`;
     };
   });
@@ -94,12 +95,12 @@ renderItems()
     const handleNext = () => {
       container.scrollLeft += container.offsetWidth;
       scrolled += container.offsetWidth;
-      id = (id + 1) % 5;  
+      id = (id + 1) % 5;
       applyStyleToNthChild(id);
       clearInterval(scrollingFunction);
       startScrolling();
     };
-    
+
     const handlePrev = () => {
       container.scrollLeft -= container.offsetWidth;
       scrolled -= container.offsetWidth;
@@ -108,7 +109,7 @@ renderItems()
       clearInterval(scrollingFunction);
       startScrolling();
     };
-    
+
     previous.addEventListener("click", handlePrev);
     next.addEventListener("click", handleNext);
 
@@ -122,7 +123,7 @@ renderItems()
         container.scrollLeft = i * container.offsetWidth;
         scrolled = i * container.offsetWidth;
         id = i;
-        console.log(id)
+        console.log(id);
         applyStyleToNthChild(id);
         clearInterval(scrollingFunction);
         startScrolling();
