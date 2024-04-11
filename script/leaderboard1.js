@@ -26,7 +26,8 @@ function displayTopLeaderboard() {
   const leaderboardBars = topLeaderboard.querySelectorAll(".leaderboard-bar");
   const topScore = leaderboard[0].score;
   const topMinScore = (
-    leaderboard[leaderboardBars.length - 1] || leaderboard[leaderboard.length - 1]
+    leaderboard[leaderboardBars.length - 1] ||
+    leaderboard[leaderboard.length - 1]
   ).score;
 
   topLeaderboard.style.setProperty("--top-score", topScore);
@@ -83,7 +84,7 @@ function sortLeaderboard(sortBy, ascending = true) {
   displayLeaderboard();
 }
 
-fetch("data/leaderboard.json")
+fetch("../data/leaderboard.json")
   .then((response) => response.json())
   .then((data) => {
     leaderboard = Object.values(data).sort((a, b) => b.score - a.score);
