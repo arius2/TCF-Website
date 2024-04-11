@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,YOPQ@8..144,100..1000,109,116&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/leaderboard.css" />
+    <title>Leaderboard - The Coding Fortnight</title>
+  </head>
+  <body>
+    <div class="circle small pink c1"></div>
+    <div class="circle small blue c2"></div>
+    <div class="circle small purple c3"></div>
+    <div class="circle medium blue c4"></div>
+    <div class="circle large pink c5"></div>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Leaderboards</a></li>
+          <li><a class="main-nav-link" href="#">About Us</a></li>
+          <li><a class="main-nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <h1>Leaderboard</h1>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <td colspan="5">
+                <div id="top-leaderboard">
+                  <div data-idx="1" class="leaderboard-bar">
+                    <div class="bar-rank"></div>
+                    <div class="bar-score"></div>
+                  </div>
+                  <div data-idx="0" class="leaderboard-bar">
+                    <div class="bar-rank"></div>
+                    <div class="bar-score"></div>
+                  </div>
+                  <div data-idx="2" class="leaderboard-bar">
+                    <div class="bar-rank"></div>
+                    <div class="bar-score"></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th data-name="rank" data-sort="asc">Rank</th>
+              <th data-name="name">Name</th>
+              <th data-name="sem">Sem</th>
+              <th data-name="language">Language</th>
+              <th data-name="score">Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+  <script src="script/leaderboard1.js"></script>
+</html>
