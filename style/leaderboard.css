@@ -201,7 +201,7 @@ tbody td:last-child {
 
 .leaderboard-bar {
   background-color: #b465e2;
-  width: 24rem;
+  min-width: 24rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border: 4px solid white;
