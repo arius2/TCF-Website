@@ -28,9 +28,9 @@
     /* font-size: 1.5rem !important; */
     margin-bottom: 1rem !important;
   }
-  table {
-    /* font-size: 1rem !important; */
-  }
+  /* table {
+    /* font-size: 1rem !important; 
+  } */
   #top-leaderboard {
     --hero-section-height: 10rem !important;
   }
