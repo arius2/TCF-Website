@@ -93,25 +93,47 @@ html {
   left: -2rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 4rem;
+  width: 6rem;
   aspect-ratio: 1;
   z-index: 100;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .next-icon {
   position: absolute;
   right: -2rem;
-  width: 4rem;
+  width: 6rem;
   top: 50%;
   transform: translateY(-50%);
   aspect-ratio: 1;
   z-index: 90;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .prev-icon img,
 .next-icon img {
-  max-width: 100%;
+  max-width: 3rem;
   height: auto;
+  cursor: pointer;
+}
+
+.prev-icon:hover,
+.next-icon:hover {
+  background-color: #3b3b5327;
+  border-radius: 50rem;
+}
+
+.prev-icon:active,
+.next-icon:active {
+  background-color: #3f3f5b87;
 }
 
 .carousel-nav {

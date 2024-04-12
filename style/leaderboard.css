@@ -136,7 +136,7 @@ table {
   border-radius: 1rem;
   background-color: rgba(77, 62, 123, 0.25);
   /* text */
-  color: white;
+  color: #fcfcfc;
   text-align: center;
   font-family: "Roboto Flex", sans-serif;
   font-weight: 700;
@@ -255,7 +255,7 @@ tbody td:last-child {
   font-size: 2rem;
 }
 
-/* Background Circles */
+/* Background Circles 
 .circle {
   position: absolute;
   border-radius: 50%;
@@ -338,3 +338,5 @@ tbody td:last-child {
     transform: translate(0);
   }
 }
+
+*/
