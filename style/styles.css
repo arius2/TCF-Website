@@ -243,6 +243,7 @@ nav {
 
 .hero-img {
   height: 45rem;
+  animation: img-hover 8s ease-in-out infinite;
 }
 
 /* top coders section */

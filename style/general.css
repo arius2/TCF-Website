@@ -68,6 +68,35 @@
   grid-column: 1/3;
 }
 
+/* Background Decorations */
+.wifi,
+.headphones,
+.settings {
+  position: absolute;
+  width: 25rem;
+  animation: hover 12s ease-in-out infinite;
+}
+
+.wifi {
+  --hover-offset: 2rem;
+  top: 85rem;
+  left: 0;
+  rotate: 40deg;
+}
+
+.settings {
+  top: 4rem;
+  right: 0;
+  --hover-offset: 1.5rem;
+}
+
+.headphones {
+  right: 0;
+  top: 160rem;
+  rotate: -30deg;
+  --hover-offset: 2.5rem;
+}
+
 /* Background Circles */
 .circle {
   position: absolute;
@@ -199,13 +228,13 @@
 
 @keyframes hover {
   0% {
-    transform: translate(0);
+    transform: translateY(0);
   }
   50% {
     transform: translateY(var(--hover-offset));
   }
   100% {
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
@@ -234,5 +263,19 @@
   }
   100% {
     background-position: 0% 20%;
+  }
+}
+
+@keyframes img-hover {
+  0% {
+    transform: translateY(0rem) scale(1);
+  }
+
+  50% {
+    transform: translateY(1rem) scale(1.03);
+  }
+
+  100% {
+    transform: translateY(0rem) scale(1);
   }
 }
