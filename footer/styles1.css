@@ -68,40 +68,38 @@ footer {
   
   #followUs ul li{
     display: inline;
-    margin-right: 50px;
+    margin-right: 10px;
   }
   
   #followUs ul li:last-child {
     margin-right: 0;
   }
-
-.footer-col ul{
+  
+  .footer-col ul{
   list-style: none;
-}
-
-.footer-col ul li a{
+  }
+  
+  .footer-col ul li a{
   text-decoration: none;
   display: inline;
   margin-inline: 15px;
   color: #bbbbbb;
   transition: all .3s ease;
-}
-
-.footer-col ul li a:hover{
+  }
+  
+  .footer-col ul li a:hover{
   color: #fcfcfc;
   padding-left: 6px;
-}
-
-#followUs a{
+  }
+  
+  #followUs a{
   display: inline-block;
-}
-
-#Support li{
-  margin-left: -40px;
+  }
+  
+  #Support li{
   margin-bottom: 20px;
-}
-
-#followUs li{
-  margin-left: -40px;
-  margin-bottom: 20px;
-}
+  }
+  
+  #followUs li{
+  margin-bottom: 10px;
+  } 
