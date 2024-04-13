@@ -109,3 +109,20 @@
   justify-content: space-evenly;
   margin: 10px;
 }
+@media screen and (max-width:768px) {
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  html{
+    font-size: 50%;
+  }
+  .container{
+    padding: 0 1rem;
+  }
+  .section-heading{
+    word-wrap: break-word;
+  }
+  .settings, .wifi, .headphones, .circle{
+    scale: 0.5;
+  }
+}
