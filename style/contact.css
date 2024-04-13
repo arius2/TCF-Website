@@ -194,30 +194,35 @@ a:hover .icon {
 }
 
 .connect ul li a {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: #fff;
   text-align: center;
-  line-height: 5rem;
+  line-height: 5.5rem;
   font-size: 2rem;
   margin: 0 10px;
-  display: block;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
-.connect ul li a .icon {
+.connect ul li a svg {
   position: relative;
-  color: #262626;
+  fill: #262626;
   transition: 0.5s;
   z-index: 3;
+  height: 3rem;
+  transition: all 0.5s ease-in-out;
 }
 
-.connect ul li a:hover .icon {
-  color: #fff;
+.connect ul li a:hover svg {
+  fill: #fff;
   transform: rotateY(360deg);
 }
 
