@@ -4,102 +4,168 @@
 
 
 footer {
-    margin-top: 10rem;
-    border-radius: 1rem 1rem 0 0;
-    padding: 7.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #65609f;
-    color: #fcfcfc;
-    font-family: "Montserrat", serif;
-  }
-  
-  .fcontainer{
-    max-width: 1170px;
-    margin: auto;
-  }
-  
-  .footer-grid{
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-basis: 25%;  */
-    padding: 10px;
-  }
-
-  #contactUs a:link{
-    color: #bbbbbb;
-    width: fit-content;
-    border-bottom: #fcfcfc;
-    margin: 20px 0;
-    transition: all .3s ease;
-  }
-
-  #contactUs a:link:hover{
-    color: #fcfcfc;
-  }
-
-  iframe {
-    width: 100%;
-    height: 50rem;
-    /* margin: 0 2rem 2rem 0; */
-  }
-  
-  .footer-col {
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-  }
-  
-  .footer-col h3 {
-    margin-bottom: 2rem;
-    font-size: 3.5rem;
-  }
-  
-  .footer-col p {
-    font-family: inherit;
-    font-size: inherit;
-  }
-  
-  #followUs {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #followUs ul li{
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  #followUs ul li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-col ul{
-  list-style: none;
-  }
-  
-  .footer-col ul li a{
-  text-decoration: none;
-  display: inline;
-  margin-inline: 15px;
-  color: #bbbbbb;
-  transition: all .3s ease;
-  }
-  
-  .footer-col ul li a:hover{
+  margin-top: 10rem;
+  border-radius: 1rem 1rem 0 0;
+  padding: 7.5rem;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: subgrid; */
+  background-color: #65609f;
   color: #fcfcfc;
-  padding-left: 6px;
-  }
-  
-  #followUs a{
-  display: inline-block;
-  }
-  
-  #Support li{
-  margin-bottom: 20px;
-  }
-  
-  #followUs li{
-  margin-bottom: 10px;
-  } 
+  font-family: "Montserrat", serif;
+}
+
+
+.fcontainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-grid{
+  /* justify-content: space-between;
+  /* flex-basis: 25%;   */
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contactUs a:link,
+ #resources a:link{
+  color: #bbbbbb;
+  width: fit-content;
+  border-bottom: #fcfcfc;
+  margin: 20px 0;
+  transition: all .3s ease;
+}
+
+#contactUs a:link:hover,
+ #resources a:link:hover{
+  color: #fcfcfc;
+}
+
+iframe {
+  width: 100%;
+  height: 50rem;
+  /* margin: 0 2rem 2rem 0; */
+}
+
+.footer-col {
+  flex: 1;
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+#contactUs,
+#followUs {
+  flex-basis: 100%;
+}
+
+.footer-col h3 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+.footer-col p {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#followUs {
+  list-style-type: none;
+  padding: 0;
+}
+
+#followUs ul li{
+  display: inline;
+  margin-right: 10px;
+}
+
+#followUs ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-col ul{
+list-style: none;
+}
+
+.footer-col ul li a{
+text-decoration: none;
+display: inline;
+margin-inline: 15px;
+color: #bbbbbb;
+transition: all .3s ease;
+}
+
+.footer-col ul li a:hover{
+color: #fcfcfc;
+padding-left: 6px;
+}
+
+#followUs a{
+display: inline-block;
+}
+
+#Support li{
+margin-bottom: 20px;
+}
+
+#followUs li{
+margin-bottom: 10px;
+} 
+
+/* feedback form */
+#feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: 3px solid #fcfcfc;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #3b3b53;
+  border-radius: 50px;
+  background-color: #bbbbbb;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid #bbbbbb;
+  background-color: #fcfcfc;
+}
+
+.contact-inputs::placeholder{
+  font-size: 1.6rem;
+  font-family: "Montserrat", serif;
+}
+
+#feedback button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 1.6rem;
+  gap: 10px;
+  border: 3px solid #fcfcfc;
+  border-radius: 50px;
+  background:linear-gradient(270deg, #3b3b53, #65609f);
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fcfcfc;
+  font-family: "Montserrat", serif;
+}
