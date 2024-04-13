@@ -46,6 +46,10 @@ const renderItems = () => {
       const badgeIndex =
         index < badgeName.length ? index : badgeName.length - 1;
       const currentBadge = badgeName[badgeIndex];
+      const setStudentSemNo = (num) => {
+        const suffixes = ["th", "st", "nd", "rd"];
+        return suffixes[num] || "th";
+      };
 
       return `
         <div class="top-main">
@@ -59,7 +63,9 @@ const renderItems = () => {
         </div>
         <div class="bottom-main">
           <div class="name">${student.name}</div>
-          <div class="class">${student.sem}st sem</div>
+          <div class="class">${student.sem}${setStudentSemNo(
+        student.sem
+      )} sem</div>
         </div>`;
     };
   });
