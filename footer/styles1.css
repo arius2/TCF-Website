@@ -2,6 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 footer {
   margin-top: 10rem;
@@ -15,34 +24,26 @@ footer {
   font-family: "Montserrat", serif;
 }
 
-
-.fcontainer{
-  max-width: 1200px;
+.fcontainer {
+  max-width: 140rem;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-grid{
-  /* justify-content: space-between;
-  /* flex-basis: 25%;   */
-  /* padding: 10px; */
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 #contactUs a:link,
-#resources a:link{
+#resources a:link {
   color: #bbbbbb;
   width: fit-content;
   border-bottom: #fcfcfc;
   margin: 20px 0;
-  transition: all .3s ease;
+
+  transition: all 0.3s ease;
 }
 
 #contactUs a:link:hover,
- #resources a:link:hover{
+#resources a:link:hover {
   color: #fcfcfc;
 }
 
@@ -66,7 +67,7 @@ iframe {
 
 .footer-col h3 {
   margin-bottom: 2rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .footer-col p {
@@ -77,92 +78,128 @@ iframe {
 #followUs {
   list-style-type: none;
   padding: 0;
+  font-size: 2.5rem;
 }
 
-#followUs ul li{
+#followUs ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 #followUs ul li:last-child {
   margin-right: 0;
 }
 
-.footer-col ul{
-list-style: none;
+.fb:link:hover {
+  color: #043fb5;
 }
 
-.footer-col ul li a{
-text-decoration: none;
-display: inline;
-margin-inline: 15px;
-color: #bbbbbb;
-transition: all .3s ease;
+.ig:link:hover {
+  color: #de3bff;
 }
 
-.footer-col ul li a:hover{
-color: #fcfcfc;
-padding-left: 6px;
+.twt:link:hover {
+  color: #17d1ff;
 }
 
-#followUs a{
-display: inline-block;
+.ldin:link:hover {
+  color: #172747;
 }
 
-#Support li{
-margin-bottom: 20px;
+.footer-col ul {
+  list-style: none;
 }
 
-#followUs li{
-margin-bottom: 10px;
-} 
+.footer-col ul li a {
+  text-decoration: none;
+  display: inline;
+  margin-inline: 15px;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fcfcfc;
+  padding-left: 6px;
+}
+
+#followUs a {
+  display: inline-block;
+}
+
+#Support ul {
+  display: flex;
+}
+
+#Support li {
+  margin-bottom: 2rem;
+}
+
+#followUs li {
+  margin-bottom: 1rem;
+}
 
 /* feedback form */
-#feedback{
+.feedback {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
+  width: 100%;
+  grid-column: span 2;
 }
 
-.contact-inputs{
-  width: 400px;
-  height: 50px;
+.contact-inputs {
+  width: 15rem;
+  height: 5rem;
   border: 3px solid #fcfcfc;
   outline: none;
-  padding-left: 25px;
+  padding-left: 2rem;
   font-weight: 500;
   font-size: 1.6rem;
   color: #3b3b53;
-  border-radius: 50px;
+  border-radius: 1rem;
   background-color: #bbbbbb;
+  max-width: 100%;
+  min-width: 40%;
 }
 
-.contact-left textarea{
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
+.contact-left {
+  width: 100%;
 }
 
-.contact-inputs:focus{
+.contact-left textarea {
+  height: 12rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  max-width: 60%;
+  min-width: 50%;
+}
+
+.contact-inputs:focus {
   border: 2px solid #bbbbbb;
   background-color: #fcfcfc;
 }
 
-.contact-inputs::placeholder{
+.feedback-email {
+  max-width: 100%;
+  min-width: 40%;
+}
+
+.contact-inputs::placeholder {
   font-size: 1.6rem;
   font-family: "Montserrat", serif;
 }
 
-#feedback button{
+.feedback button {
   display: flex;
   align-items: center;
   padding: 15px 30px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   gap: 10px;
   border: 3px solid #fcfcfc;
-  border-radius: 50px;
-  background:linear-gradient(270deg, #3b3b53, #65609f);
+  border-radius: 2rem;
+  background: linear-gradient(270deg, #3b3b53, #65609f);
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: bold;
