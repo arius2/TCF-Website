@@ -109,7 +109,7 @@
   justify-content: space-evenly;
   margin: 10px;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1058px) {
   .cards{
     grid-template-columns: 1fr;
   }
@@ -124,5 +124,13 @@
   }
   .settings, .wifi, .headphones, .circle{
     scale: 0.5;
+  }
+}
+@media screen and (max-width:1250px) and (min-width:1058px) {
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  html{
+    font-size: 67.5%;
   }
 }
