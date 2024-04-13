@@ -136,7 +136,6 @@ renderItems()
         container.scrollLeft = i * container.offsetWidth;
         scrolled = i * container.offsetWidth;
         id = i;
-        console.log(id);
         applyStyleToNthChild(id);
         clearInterval(scrollingFunction);
         startScrolling();
@@ -150,7 +149,6 @@ renderItems()
 function applyStyleToNthChild(n) {
   const bar = document.querySelector(".bar");
   if (!bar) return;
-  console.log(n);
   const children = bar.children;
 
   for (let i = 0; i < children.length; i++) {
