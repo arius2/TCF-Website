@@ -43,7 +43,8 @@ const renderItems = () => {
 
     const generateContent = (student, index) => {
       const badgeName = ["gold", "silver", "bronze", "4", "5"];
-      const badgeIndex = index < badgeName.length ? index : badgeName.length - 1;
+      const badgeIndex =
+        index < badgeName.length ? index : badgeName.length - 1;
       const currentBadge = badgeName[badgeIndex];
 
       return `
@@ -71,9 +72,8 @@ renderItems()
     let scrollingFunction;
 
     const startScrolling = () => {
-      if (!container) return; // Check if container exists
+      if (!container) return;
       clearInterval(scrollingFunction);
-
       scrollingFunction = setInterval(() => {
         const scrollWidth = container.scrollWidth;
 
@@ -81,6 +81,7 @@ renderItems()
           container.scrollLeft = 0;
           scrolled = 0;
           id = 0;
+          applyStyleToNthChild(id);
         } else {
           container.scrollLeft += container.offsetWidth;
           scrolled += container.offsetWidth;
@@ -93,22 +94,35 @@ renderItems()
     startScrolling();
     const handleNext = () => {
       container.scrollLeft += container.offsetWidth;
-      scrolled += container.offsetWidth;
-      id = (id + 1) % 5;  
-      applyStyleToNthChild(id);
       clearInterval(scrollingFunction);
       startScrolling();
+      if (id < 4) {
+        id += 1;
+      } else {
+        id = 0;
+        scrolled = 0;
+        container.scrollLeft = 0;
+      }
+      applyStyleToNthChild(id);
     };
-    
+
     const handlePrev = () => {
+      const scrollWidth = container.scrollWidth;
+
       container.scrollLeft -= container.offsetWidth;
       scrolled -= container.offsetWidth;
-      id = (id - 1 + 5) % 5;
+      if (id > 0) {
+        id -= 1;
+      } else {
+        id = 4;
+        scrolled = scrollWidth;
+        container.scrollLeft = scrollWidth;
+      }
       applyStyleToNthChild(id);
       clearInterval(scrollingFunction);
       startScrolling();
     };
-    
+
     previous.addEventListener("click", handlePrev);
     next.addEventListener("click", handleNext);
 
@@ -122,7 +136,7 @@ renderItems()
         container.scrollLeft = i * container.offsetWidth;
         scrolled = i * container.offsetWidth;
         id = i;
-        console.log(id)
+        console.log(id);
         applyStyleToNthChild(id);
         clearInterval(scrollingFunction);
         startScrolling();
@@ -136,10 +150,15 @@ renderItems()
 function applyStyleToNthChild(n) {
   const bar = document.querySelector(".bar");
   if (!bar) return;
-
+  console.log(n);
   const children = bar.children;
 
   for (let i = 0; i < children.length; i++) {
     children[i].style.opacity = i === n ? "1" : "0.4";
   }
+
+  const container = document.querySelector(".sub-container-carousel");
+  if (!container) return;
+
+  container.scrollLeft = n * container.offsetWidth;
 }
