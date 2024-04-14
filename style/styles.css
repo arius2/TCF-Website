@@ -100,10 +100,6 @@ ul {
 /* Header Section */
 
 nav {
-  position: relative;
-}
-
-.navbar {
   display: flex;
   height: 10rem;
   justify-content: space-between;
