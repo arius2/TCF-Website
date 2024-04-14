@@ -121,6 +121,7 @@
   }
   .section-heading{
     word-wrap: break-word;
+    font-size:5rem;
   }
   .settings, .wifi, .headphones, .circle{
     scale: 0.5;
