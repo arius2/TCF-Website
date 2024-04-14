@@ -177,7 +177,7 @@ html {
   flex-grow: 1;
   grid-template-rows: 1fr 1fr;
   z-index: 0;
-  min-width: 100%;
+  min-width: 101.5%;
 }
 
 .top-main {
