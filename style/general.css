@@ -68,6 +68,35 @@
   grid-column: 1/3;
 }
 
+/* Background Decorations */
+.wifi,
+.headphones,
+.settings {
+  position: absolute;
+  width: 25rem;
+  animation: hover 12s ease-in-out infinite;
+}
+
+.wifi {
+  --hover-offset: 2rem;
+  top: 85rem;
+  left: 0;
+  rotate: 40deg;
+}
+
+.settings {
+  top: 4rem;
+  right: 0;
+  --hover-offset: 1.5rem;
+}
+
+.headphones {
+  right: 0;
+  top: 160rem;
+  rotate: -30deg;
+  --hover-offset: 2.5rem;
+}
+
 /* Background Circles */
 .circle {
   position: absolute;
@@ -127,17 +156,85 @@
   animation-delay: 1s;
 }
 
+/* Icon Hover Effect */
+.connect ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect ul li {
+  list-style: none;
+}
+
+.connect ul li a {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: #fff;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+  margin: 0 10px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.connect ul li a svg {
+  position: relative;
+  fill: #262626;
+  transition: 0.5s;
+  z-index: 3;
+  height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.connect ul li a:hover svg {
+  fill: #fff;
+  transform: rotateY(360deg);
+}
+
+.connect ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.connect ul li a:hover:before {
+  top: 0;
+}
+
+.connect ul li:nth-child(1) a:before {
+  background: #0077b5;
+}
+
+.connect ul li:nth-child(2) a:before {
+  background: #24292e;
+}
+
 /* Keyframes section */
 
 @keyframes hover {
   0% {
-    transform: translate(0);
+    transform: translateY(0);
   }
   50% {
     transform: translateY(var(--hover-offset));
   }
   100% {
-    transform: translate(0);
+    transform: translateY(0);
   }
 }
 
@@ -166,5 +263,19 @@
   }
   100% {
     background-position: 0% 20%;
+  }
+}
+
+@keyframes img-hover {
+  0% {
+    transform: translateY(0rem) scale(1);
+  }
+
+  50% {
+    transform: translateY(1rem) scale(1.03);
+  }
+
+  100% {
+    transform: translateY(0rem) scale(1);
   }
 }

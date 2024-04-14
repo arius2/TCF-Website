@@ -161,6 +161,7 @@ html {
 
 .illustration-carousel img {
   height: 77%;
+  animation: img-hover 8s ease-in-out infinite;
 }
 .button {
   display: flex;

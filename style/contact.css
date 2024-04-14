@@ -69,8 +69,8 @@
   gap: 2rem;
   border-radius: 3rem;
   box-shadow: inset 0 0 2rem 5px #fef0ffbd;
-
   padding: 2rem;
+  height: 100%;
 }
 
 .core-team-section,
@@ -86,7 +86,6 @@
   row-gap: 2.5rem;
 }
 @media screen (min-width: 768px) {
-  
 }
 .part1 {
   margin-top: 5px;
@@ -112,146 +111,3 @@
   justify-content: space-evenly;
   margin: 10px;
 }
-.github {
-  margin-left: 10px;
-}
-.card2 {
-  width: 80%;
-  height: 1320px;
-  background-color: rgb(69, 79, 79);
-  padding: 35px 45px;
-  border-radius: 15px;
-  border: 3px solid white;
-  margin-top: 50px;
-}
-.row1 {
-  display: flex;
-  margin: 20px;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.linkdin {
-  opacity: 1;
-}
-.github {
-  opacity: 1;
-}
-/* 
-.github a,
-.linkdin a {
-  width: 5rem;
-  height: 5rem;
-  background-color: #fff;
-  text-align: center;
-  line-height: 5rem;
-  font-size: 2rem;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-
-a .icon {
-  position: relative;
-  color: #262626;
-  transition: 0.5s;
-  z-index: 3;
-}
-a:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-
-.github::before a,
-.linkdin::before a {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.github a:hover:before,
-.linkdin a:hover:before {
-  top: 0;
-}
-
-.linkdin a:before {
-  background: #0077b5;
-} */
-.connect ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.connect ul li {
-  list-style: none;
-}
-
-.connect ul li a {
-  width: 5.5rem;
-  height: 5.5rem;
-  background-color: #fff;
-  text-align: center;
-  line-height: 5.5rem;
-  font-size: 2rem;
-  margin: 0 10px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-
-.connect ul li a svg {
-  position: relative;
-  fill: #262626;
-  transition: 0.5s;
-  z-index: 3;
-  height: 3rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.connect ul li a:hover svg {
-  fill: #fff;
-  transform: rotateY(360deg);
-}
-
-.connect ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.connect ul li a:hover:before {
-  top: 0;
-}
-
-.connect ul li:nth-child(1) a:before {
-  background: #0077b5;
-}
-
-.connect ul li:nth-child(2) a:before {
-  background: #24292e;
-}
-
-/* ai  */
-
