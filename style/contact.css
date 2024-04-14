@@ -85,6 +85,9 @@
   width: 100%;
   row-gap: 2.5rem;
 }
+@media screen (min-width: 768px) {
+  
+}
 .part1 {
   margin-top: 5px;
   font-size: 1.2rem;
@@ -249,3 +252,6 @@ a:hover .icon {
 .connect ul li:nth-child(2) a:before {
   background: #24292e;
 }
+
+/* ai  */
+
