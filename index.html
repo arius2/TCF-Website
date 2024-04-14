@@ -185,7 +185,7 @@
 
           .pseudo {
             position: relative;
-            max-width: 55rem;
+            max-width: 80%;
           }
           .sub-container-carousel {
             margin: 2.5rem;
@@ -231,8 +231,109 @@
             top: 115rem;
           }
           .headphones {
-      right: 5rem;
-      top: 250rem;
+            right: 5rem;
+            top: 250rem;
+          }
+          .carousel-nav {
+            bottom: -2rem;
+          }
+          .badge img {
+            max-width: 100%;
+          }
+          .top-coders-head {
+            font-size: 5rem;
+            text-align: center;
+          }
+          .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            text-align: left !important;
+          }
+        }
+
+        @media screen and (max-width: 425px) {
+          html {
+            font-size: 40%;
+          }
+
+          .main-nav-list {
+            gap: 2rem;
+            font-size: 1.4rem;
+          }
+          .hero-title h1 {
+            font-size: 5rem;
+          }
+          .hero-content {
+            font-size: 2rem;
+          }
+          .fcontainer {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+          .feedback {
+            grid-column: span 1;
+            align-items: center;
+          }
+          .footer-col ul {
+            text-align: center !important;
+            font-size: 2rem;
+          }
+          .footer-col h3 {
+            margin-bottom: 2rem;
+            font-size: 4rem;
+          }
+          .contact-inputs {
+            width: 20rem;
+          }
+          .contact-left textarea {
+            height: 12rem;
+            padding-top: 1rem;
+            border-radius: 2rem;
+            max-width: 90%;
+            min-width: 80%;
+          }
+          .button {
+            font-size: 15rem !important;
+          }
+        }
+
+        @media screen and (max-width: 375px) {
+          html {
+            font-size: 36%;
+          }
+          .illustration-carousel img {
+            height: 30rem;
+          }
+          .headphones {
+            right: 6rem;
+            top: 222rem;
+          }
+          .prev-icon img, .next-icon img {
+      max-width: 2rem;
+        }
+
+        @media screen and (max-width: 375px) {
+          .container {
+            padding: 0 3rem;
+          }
+
+          .hero,
+          .top-coders {
+            padding: 7.5rem 3rem;
+          }
+          .hero-reg {
+            font-size: 3.2rem;
+          }
+          .hero-title h1 {
+            font-size: 4.6rem;
+          }
+          .hero-img {
+            height: 30rem;
+          }
+          .illustration-carousel img {
+            height: 25rem;
+          }
         }
     </style>
   </head>
