@@ -90,6 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
+  width: 100%;
 }
 
 ul {
@@ -386,6 +387,8 @@ iframe {
 
 #Support ul {
   display: flex;
+  text-align: center;
+  list-style: none;
 }
 
 #Support li {
