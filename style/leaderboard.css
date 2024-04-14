@@ -10,37 +10,6 @@
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    margin-inline: 1rem !important;
-  }
-
-  main {
-    padding-inline: 3rem !important;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  main {
-    padding-inline: 1rem !important;
-  }
-  h1 {
-    /* font-size: 1.5rem !important; */
-    margin-bottom: 1rem !important;
-  }
-  /* table {
-    /* font-size: 1rem !important; 
-  } */
-  #top-leaderboard {
-    --hero-section-height: 10rem !important;
-  }
-  .bar-rank {
-    font-size: 1rem !important;
-  }
-  .bar-score {
-    font-size: 0.75rem !important;
-  }
-}
 
 body {
   width: 100%;
@@ -253,6 +222,105 @@ tbody td:last-child {
 }
 .bar-score {
   font-size: 2rem;
+}
+@media screen and (max-width: 1250px){
+  .leaderboard-bar{
+    min-width: 19rem  !important;
+  }
+  .container{
+    padding: 0 10rem !important;
+  }
+  .main{
+    padding: 7rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.9
+  }
+}
+@media screen and (max-width: 1015px){
+  .leaderboard-bar{
+    min-width: 14rem  !important;
+  }
+  .container{
+    padding: 0 7rem !important;
+  }
+  html{
+    font-size: 57% !important;
+  }
+  .main{
+    padding: 6.5rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.8
+  }
+}
+@media screen and (max-width: 800px){
+  .leaderboard-bar{
+    min-width: 16rem  !important;
+  }
+  .container{
+    padding: 0 4rem !important;
+  }
+  html{
+    font-size: 50% !important;
+  }
+  .main{
+    padding: 6rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.6
+  }
+}
+@media screen and (max-width: 610px){
+  .leaderboard-bar{
+    min-width: 16rem  !important;
+  }
+  .container{
+    padding: 0 1rem !important;
+  }
+  html{
+    font-size: 40% !important;
+  }
+  .main{
+    padding: 5.5rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.5
+  }
+}
+@media screen and (max-width: 515px){
+  .leaderboard-bar{
+    min-width: 14rem  !important;
+  }
+  .container{
+    padding: 0 1rem !important;
+  }
+  html{
+    font-size: 34% !important;
+  }
+  .main{
+    padding: 5rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.3
+  }
+}
+@media screen and (max-width: 400px){
+  .leaderboard-bar{
+    min-width: 12rem  !important;
+  }
+  .container{
+    padding: 0 1rem !important;
+  }
+  html{
+    font-size: 30% !important;
+  }
+  .main{
+    padding: 4.5rem;
+  }
+  .circle, .wifi, .settings{
+    scale: 0.3 !important
+  }
 }
 
 /* Background Circles 
