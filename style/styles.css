@@ -82,7 +82,7 @@ html {
 
 body {
   background-color: #eef6f3;
-  background-image: url(http://www.transparenttextures.com/patterns/noisy.png);
+  width: 100%;
 }
 
 .container {
@@ -100,6 +100,10 @@ ul {
 /* Header Section */
 
 nav {
+  position: relative;
+}
+
+.navbar {
   display: flex;
   height: 10rem;
   justify-content: space-between;
@@ -115,6 +119,7 @@ nav {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  width: 50rem;
 }
 
 .main-nav-link {

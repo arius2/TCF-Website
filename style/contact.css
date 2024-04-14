@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  overflow-x: hidden !important;
+}
 /* .container {
   width: 100%;
   height: 2200px;
@@ -85,8 +89,7 @@
   width: 100%;
   row-gap: 2.5rem;
 }
-@media screen (min-width: 768px) {
-}
+
 .part1 {
   margin-top: 5px;
   font-size: 1.2rem;
