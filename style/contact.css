@@ -85,8 +85,7 @@
   width: 100%;
   row-gap: 2.5rem;
 }
-@media screen (min-width: 768px) {
-}
+
 .part1 {
   margin-top: 5px;
   font-size: 1.2rem;
@@ -110,4 +109,31 @@
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
+}
+
+@media screen and (max-width:1058px) {
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  html{
+    font-size: 50%;
+  }
+  .container{
+    padding: 0 1rem;
+  }
+  .section-heading{
+    word-wrap: break-word;
+    font-size:5rem;
+  }
+  .settings, .wifi, .headphones, .circle{
+    scale: 0.5;
+  }
+}
+@media screen and (max-width:1250px) and (min-width:1058px) {
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  html{
+    font-size: 67.5%;
+  }
 }
