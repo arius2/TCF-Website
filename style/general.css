@@ -272,7 +272,7 @@
   }
 
   50% {
-    transform: translateY(1rem) scale(1.03);
+    transform: translateY(1rem) scale(1);
   }
 
   100% {
